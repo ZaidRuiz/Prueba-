@@ -1,0 +1,14 @@
+{% extends "inicio/encabezado.html" %} {% load static %} {% block usuario_imagen %}
+<img src="{% static 'inicio/images/home.png' %}"> {% endblock %} {% block usuario_nombre %} Home <span>Hola</span> {% endblock %} {% block encabezado %}
+<div class="page-header">
+    <div class="page-title">
+        <h3>Alumnos <small>Lista de Alumnos</small></h3>
+    </div>
+</div>
+{% endblock %} {% block contenido %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p>Aquí va tu tabla actual de alumnos...</p>
+    </div>
+</div>
+{% endblock %}
