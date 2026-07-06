@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "inicio/encabezado.html" %}
 
 {% 
@@ -9,4 +10,19 @@
 {% endblock encabezado %}
 
 {% block contenido %}
+=======
+{% extends "inicio/encabezado.html" %} {% load static %} {% block usuario_imagen %}
+<img src="{% static 'inicio/images/user-icon.png' %}"> {% endblock %} {% block usuario_nombre %} Nombre <span>Aqui esta la vista nombre</span> {% endblock %} {% block encabezado %}
+<div class="page-header">
+    <div class="page-title">
+        <h3>About me <small>Información Personal</small></h3>
+    </div>
+</div>
+{% endblock %} {% block contenido %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <h1>Zaid Martinez Ruiz</h1>
+    </div>
+</div>
+>>>>>>> b8b5b7d0ca931f96deaea1be431ecce7153bdb35
 {% endblock %}

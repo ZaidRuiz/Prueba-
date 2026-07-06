@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "inicio/encabezado.html" %} {% load static %}
 
     {% block titulo %} Formulario {% endblock titulo %}
@@ -75,4 +76,19 @@
 			</form>
 		<!-- Fin del Formulario -->
 		<!-- /Contenido Principal-->
+=======
+{% extends "inicio/encabezado.html" %} {% load static %} {% block usuario_imagen %}
+<img src="{% static 'inicio/images/user-icon.png' %}"> {% endblock %} {% block usuario_nombre %} Registrar <span>Formulario</span> {% endblock %} {% block encabezado %}
+<div class="page-header">
+    <div class="page-title">
+        <h3>Formulario <small>Ingresa tu información</small></h3>
+    </div>
+</div>
+{% endblock %} {% block contenido %}
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p>Aquí van tus inputs de Matrícula, Nombre, Edad...</p>
+    </div>
+</div>
+>>>>>>> b8b5b7d0ca931f96deaea1be431ecce7153bdb35
 {% endblock %}
